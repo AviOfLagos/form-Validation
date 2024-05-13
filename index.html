@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi's HTML Form</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            display: block;
+            margin-top: 1em 1rem;
+            max-width: 800px;
+            margin: auto;
+            font-family: inter;
+
+
+        }
+        form {
+            background-color: lightblue;
+            display: grid;
+            margin-top: 1em 1rem;
+            border-radius: 16px;
+            padding: 24px;
+            gap: 2rem;
+        }
+         h1 {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+                p {
+          color: navy;
+            font-size: 20px;
+        }
+        div {
+            border: 1px;
+            padding: 2px;
+            margin: 2px;
+            width: fill;
+        }
+        input {
+            border: 1px;
+            width: 20rem;
+            height: 48px;
+            border-radius: 8px;
+            background-color: azure;
+            width: 100%;
+        }
+        button{
+            padding: 16px 32px;
+            border-radius: 8px;
+            background: dodgerblue;
+            color: white;
+            font-size: large;
+            max-width: 40%;
+            min-width: 38%;
+            width: fill;
+            gap: 16px;
+            margin-top: 1rem;
+            display: inline;
+        }
+        label{
+            font-size: 20px;
+            padding: 8px 0px;
+        }
+        .feild{
+            display: inline;
+        }
+        .item{
+            padding: 8px 0px;
+            gap: 8px;
+        }
+
+        </style>
+</head>
+    <body>
+        <div id="error"></div>
+        <form id="registrationForm">
+        <div>
+            <h1>HTML Form</h1>
+            <p>Simple HTML Form with data validation</p>
+        </div>
+        <div class="field">
+            <div class="item">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="firstName" name="firstName" required>
+            <span class="error" id="firstNameError"></span>
+            </div>
+    
+            <div class="item">
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lastName" name="lastName" required>
+            <span class="error" id="lastNameError"></span>
+            </div>
+    
+            <div class="item">
+            <label for="oname">Other names:</label><br>
+            <input type="text" id="otherNames" name="otherNames">
+            <span class="error" id="otherNamesError"></span>
+            </div>
+    
+            <div class="item">
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+            </div>
+    
+            <div class="item">
+            <label for="number">Enter phone number:</label><br>
+            <input type="number" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10,14}">
+            <span class="error" id="phoneNumberError"></span>
+            </div>
+    
+            <div class="item">
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="male">Binary</option>
+                <option value="female">Quer</option>
+                <option value="other">Prefer Not to say</option>
+            </select>
+            <span class="error" id="genderError"></span>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        </form>
+    <script src="script.js"></script>
+  </body>
+</html>

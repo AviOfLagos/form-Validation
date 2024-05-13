@@ -1,0 +1,77 @@
+body {
+  display: block;
+  margin-top: 1em 1rem;
+  max-width: 800px;
+  margin: auto;
+  font-family: inter;
+}
+
+form {
+  background-color: lightblue;
+  display: grid;
+  margin-top: 1em 1rem;
+  border-radius: 16px;
+  padding: 24px;
+  gap: 2rem;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+p {
+  color: navy;
+  font-size: 20px;
+}
+
+div {
+  border: 1px;
+  padding: 2px;
+  margin: 2px;
+  width: fill;
+}
+
+input,
+select {
+  border: 1px;
+  width: 20rem;
+  height: 48px;
+  border-radius: 8px;
+  background-color: azure;
+  width: fill;
+  padding: 0px 16px ;
+  font-size: 16px;
+}
+
+button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: dodgerblue;
+  color: white;
+  font-size: large;
+  max-width: 40%;
+  min-width: 38%;
+  width: fill;
+  gap: 16px;
+  margin-top: 1rem;
+  display: inline;
+}
+
+label {
+  font-size: 20px;
+  padding: 8px 0px;
+}
+
+.field {
+  display: inline;
+}
+
+.item {
+  padding: 8px 0px;
+  gap: 8px;
+}
+
+.error {
+  color: red;
+}
